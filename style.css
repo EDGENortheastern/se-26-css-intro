@@ -1,11 +1,66 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
+:root {
+  --page-bg: #2d7496;
+  --card-bg: #0d3353;
+  --text-color: #c8eaf7;
+  --border-color: #62b6d0;
+  --accent-color: #f79868;
+}
+
 html {
-  background: #2d7496;
+  background: var(--page-bg);
 }
 
 body {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px;
+  background: var(--card-bg);
+  border-radius: 24px;
   font-family: "Lato", Arial, sans-serif;
-  color: #c8eaf7;
+  color: var(--text-color);
+}
+
+/* Each label sits above its box */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 700;
+}
+
+input,
+button {
+  height: 48px;
+  font: inherit;
+  color: inherit;
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+}
+
+input {
+  padding: 0 14px;
+  color-scheme: dark;
+}
+
+input[type="color"] {
+  width: 72px;
+}
+
+button {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  color: var(--card-bg);
+  background: var(--accent-color);
+  border: none;
 }
