@@ -11,16 +11,16 @@
     <h2>📋 Event Planner</h2>
     <form>
         <div class="field">
-            <label>🎈 Event name:</label>
-            <input type="text" placeholder="My Birthday 🎂" required>
+            <label for="event-name">🎈 Event name:</label>
+            <input type="text" id="event-name" name="eventName" placeholder="My Birthday 🎂" required>
         </div>
         <div class="field">
-            <label>📅 Date:</label>
-            <input type="date">
+            <label for="event-date">📅 Date:</label>
+            <input type="date" id="event-date" name="eventDate">
         </div>
         <div class="field">
-            <label>🎨 Theme:</label>
-            <input type="color">
+            <label for="theme">🎨 Theme:</label>
+            <input type="color" id="theme" name="theme" value="#0d3353">
         </div>
         <div class="field">
             <button type="submit">✅ Submit</button>
