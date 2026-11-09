@@ -1,1 +1,5 @@
-console.log("I am here!")
+const theme = document.querySelector("#theme")
+
+theme.addEventListener("input", () => {
+    document.body.style.backgroundColor=theme.value;
+});
